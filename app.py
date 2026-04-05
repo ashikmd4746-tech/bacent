@@ -3,8 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-app = Flask(name)
-
+app = Flask(__name__)
 API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"
 
 def get_places(keyword, location):
